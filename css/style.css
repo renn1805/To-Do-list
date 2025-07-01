@@ -14,11 +14,10 @@ body {
 main.conteiner {
     background-color: #d1d1d14f;
     border: 1px solid #64646446;
-    width: 500px;
+    width: 70%;
     margin-inline: auto;
     padding: 10px;
     border-radius: 1pc;
-    color: #A59783;
 }
 
 input.input-task {
@@ -45,4 +44,41 @@ button.button-add-task {
 button.button-add-task:hover {
     opacity: 0.7;
     cursor: pointer;
+}
+
+ul.list-task {
+    margin-top: 40px;
+}
+
+li.task {
+    background: #b3b3b371;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    min-height: 60px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+
+
+li.task button {
+    background: none;
+    border: none;
+    /* border: 1px solid tomato; */
+    padding: 0;
+    height: 40px;
+    width: 40px;
+}
+
+li.task img {
+    height: 40px;
+    opacity: 0;
+    /* border: 1px solid tomato; */
+    transition: opacity 0.5s ease-in-out;
+}
+
+li.task:hover img {
+    opacity: 1;
 }
