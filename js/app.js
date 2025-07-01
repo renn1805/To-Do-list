@@ -10,7 +10,7 @@ const completeList = document.querySelector(".list-task");
 
 // ? array responsavel por conter todos os nomes das tasks
 let textTask = [];
-// todo: funcition responsavel por ditar os nomes das tasks
+// todo: funcition responsavel por ditar os nomes das tasksa
 function adicionarTask() {
    // responsavel por levar o valor do input até o array
    textTask.push(inputTask.value);
