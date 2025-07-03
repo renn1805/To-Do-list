@@ -11,12 +11,16 @@ body {
     padding-block: 8%;
 }
 
+button {
+    cursor: pointer;
+}
+
 main.conteiner {
     background-color: #d1d1d14f;
     border: 1px solid #64646446;
     width: 70%;
     margin-inline: auto;
-    padding: 10px;
+    padding: 15px;
     border-radius: 1pc;
 }
 
@@ -60,6 +64,8 @@ li.task {
     border-radius: 6px;
     margin-bottom: 25px;
     gap: 10px;
+    transition: 1s ease;
+    box-shadow: 1px 4px 10px #55555583;
 }
 
 
@@ -76,9 +82,17 @@ li.task img {
     height: 40px;
     opacity: 0;
     /* border: 1px solid tomato; */
-    transition: opacity 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+li.task img:hover {
+    transform: scale(1.2) rotate(360deg)
 }
 
 li.task:hover img {
     opacity: 1;
+}
+
+li.task:hover {
+    transform: scale(1.03);
 }
